@@ -1,0 +1,11 @@
+<h2>Total Matches by Country</h2>
+
+<div>
+  <label for="countryInput">Enter Country:</label>
+  <input type="text" id="countryInput" [(ngModel)]="country">
+  <button (click)="fetchTotalMatches()">Get Total Matches</button>
+</div>
+
+<div *ngIf="totalMatches !== null">
+  <p>Total matches for {{ country }}: {{ totalMatches }}</p>
+</div>

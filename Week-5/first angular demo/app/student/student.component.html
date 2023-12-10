@@ -1,0 +1,28 @@
+<p>student works!</p>
+<h1>Welcome :{{sname}}</h1>
+<form>
+
+    SID:<input type="text" name="sid" [value]="sid"/><br>
+    SNAME:<input type="text" name="sname" [value]="sname"  [(ngModel)]=sname/><br>
+
+   
+
+
+    <button type="submit" (click)="getData()" >GetData</button>
+
+
+
+
+
+</form>
+<br>
+<img [src]=imageURL/><br>
+<h1 *ngIf="5>3">this is h1</h1>
+<h1 *ngIf="false">this is h1</h1>
+
+<table border="1">
+
+<tr *ngFor="let item of items"><td>{{items}}</td></tr>
+
+</table>
+
